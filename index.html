@@ -16,7 +16,99 @@
     </head>
 
     <body>
-        
+        <div class="head">
+            <h1 class="title">Etch-A-Sketch</h1>
+        </div>
+
+        <div class="body">
+            <div class="grid">
+                <!-- Grid content is generated using JavaScript. -->
+            </div>
+
+            <div class="controls">
+                <div class="control-panel grid-controls rounded-border">
+                    <div class="grid-size-controls">
+                        <div class="grid-size-info">
+                            <span class="grid-size-label bold">Grid Size</span>
+
+                            <br> 
+                        
+                            <span class="grid-size bold"></span>
+                        </div>
+
+                        <button class="set-grid-size rounded-border">Set</button>
+                    </div>
+
+                    <button class="toggle-grid-lines rounded-border">Toggle Grid Lines</button>
+                </div>
+
+                <div class="control-panel drawing-controls rounded-border">
+                    <span class="bold">Drawing Mode</span>
+
+                    <button class="standard-drawing-mode rounded-border">Standard</button>
+                    <button class="lineographic-drawing-mode rounded-border">Lineographic</button>
+                </div>
+
+                <div class="control-panel color rounded-border">
+                    <label class="bold" for="color">Color</label>
+
+                    <input class="rounded-border" type="color" value="#F7D917">
+                </div>
+
+                <div class="control-panel coloring-controls rounded-border">
+                    <div class="coloring-modes">
+                        <span class="bold">Coloring Mode</span>
+
+                        <button class="standard-coloring-mode rounded-border">Standard</button>
+                        <button class="random-coloring-mode rounded-border">Random</button>
+                        <button class="paintbrush rounded-border">Paintbrush</button>
+                        <button class="eraser rounded-border">Eraser</button>    
+                    </div>
+
+                    <div class="coloring-functions">
+                        <span class="bold">Fill/Clear</span>
+
+                        <button class="fill rounded-border">Fill</button>
+                        <button class="clear rounded-border">Clear</button>    
+                    </div>
+                </div>
+
+                <div class="control-panel gradient-controls rounded-border">
+                    <span class="bold">Gradient Modes</span>
+
+                    <button class="gradient-mode rounded-border">Gradient Mode</button>
+
+                    <div class="gradient-mode">
+                        <button class="lighten rounded-border">Lighten</button>
+                        <button class="darken rounded-border">Darken</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tooltip">
+                Hover over a button to view its description here.
+            </div>
+        </div>
+
+        <div class="foot">
+            <div class="credit">
+                Created by <span class="bold">Ali Aboul-Sauood</span> ==>
+            </div>
+
+            <ul class="links">
+                <li>
+                    <a href="https://www.github.com/ali-aboulsauood" target="_blank" rel="noopener noreferrer" title="Click here to visit my GitHub profile!">
+                        <img src="images/logos/github-mark-white.svg" alt="GitHub" width="24px" height="24px">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.linkedin.com/in/ali-k-mohammed" target="_blank" rel="noopener noreferrer" title="Click here to visit my LinkedIn profile!">
+                        <img src="images/logos/InBug-White.png" alt="linkedin" width="24px" height="24px">
+                    </a>
+                </li>
+            </ul>
+        </div>
     </body>
 
 </html>
