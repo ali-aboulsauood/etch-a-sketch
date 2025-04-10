@@ -31,3 +31,20 @@ This electronic version of Etch-A-Sketch is designed to have some resemblance to
 
 **click [here](https://ali-aboulsauood.github.io/etch-a-sketch/) to play Etch-A-Sketch.**
 -->
+
+#### Grid
+
+Etch-A-Sketch uses a square grid consisting of square _cells_, each of which can contain exactly one color (white by default).
+
+##### Grid Size
+
+The default grid size (total number of cells) is `16 × 16` (256 cells), but the user may set the grid size any integer value from `1 × 1` (single cell) to `100 × 100` (10000 cells).
+Larger grid sizes are not allowed, in order to prevent potential delays, freezing, or crashing due to increased computer resource usage.
+
+The larger the grid size, the more complex and detailed the produced image can be.
+
+The grid is, thus, analogous to an electronic visual display - with the cells being analogous to pixels and the grid size being analogous to the screen resolution.
+
+##### Grid Lines
+
+Grid lines can be toggled (shown/hidden) by the user. By default, they are shown so as to help the user get an idea about the current grid size.
