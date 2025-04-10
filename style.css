@@ -11,6 +11,11 @@
     text-align: center;
 }
 
+*:focus {
+    outline-color: #F7D917;
+    outline-width: thick;
+}
+
 html {
     display: flex;
     flex-direction: column;
@@ -29,11 +34,9 @@ button, input {
     border: 2px solid #F7D917;
 }
 
-button:hover, button:focus, button.activated {
+button:hover, button.active {
     background-color: #F7D917;
     color: #C80815;
-
-    outline-color: white;
 }
 
 .bold {
