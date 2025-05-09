@@ -1,6 +1,8 @@
 "use strict";
 
 document.addEventListener('DOMContentLoaded', () => {
+    // Grid and Grid Size/Lines
+
     const DEFAULT_GRID_WIDTH = 16, MIN_GRID_WIDTH = 1, MAX_GRID_WIDTH = 100;
 
     const CSS_SELECTOR_GRID = ".grid";
