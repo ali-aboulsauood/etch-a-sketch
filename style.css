@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');              /* Font: Finger Paint (refer to: https://fonts.google.com/specimen/Finger+Paint) */
+
+/* General Styles */
+
+* {
+    /* Font: Finger Paint - Regular */
+    font-family: "Finger Paint", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    text-align: center;
+}
+
+*:focus {
+    outline-color: #F7D917;
+    outline-width: thick;
+}
+
+html {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-content: center;
+
+    background-color: #C80815;      /* Venetian Red (refer to: https://en.wikipedia.org/wiki/Venetian_red) */
+    color: #F7D917;                 /* Tartrazine (refer to: https://en.wikipedia.org/wiki/Shades_of_yellow#Tartrazine) */
+}
+
+button, input {
+    background-color: transparent;
+    color: #F7D917;
+
+    border: 2px solid #F7D917;
+}
+
+button:hover, button.active {
+    background-color: #F7D917;
+    color: #C80815;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.rounded-border {
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+/* Header and Footer Styles */
+
+.head, .foot {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    margin: 8px;
+}
+
+.head .title {
+    font-size: 64px;
+    font-weight: bold;
+
+    margin: 0;
+}
+
+.foot .credit {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 8px;
+
+    font-size: large;
+}
+
+.foot .links {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    list-style-type: none;
+}
+
+/* Body Styles */
+
+.body {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 16px;
+}
+
+.body .grid {
+    display: flex;
+    flex-direction: column;
+
+    width: 60vh;
+    height: 60vh;
+
+    border: 8px solid #F7D917;
+
+    background-color: white;
+}
+
+/* The following children classes of `.grid` are added using JavaScript. */
+
+.body .grid .row {
+    display: flex;
+    flex-direction: row;
+
+    flex: 1 1 auto;
+}
+
+.body .grid .row .cell {
+    flex: 1 1 auto;
+}
+
+.body .grid .row .cell.line-visible {
+    border: 0.01px solid #F7D917;
+}
+
+
+
+.body .control-area {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 16px;
+}
+
+
+.body .controls {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: stretch;
+
+    gap: 16px;
+
+    margin-top: 8px;
+}
+
+.body .controls .control-panel {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: stretch;
+
+    gap: 8px;
+
+    border: 2px dashed #F7D917;
+
+    padding: 8px;
+}
+
+.body .controls .control-panel > * {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 16px;
+}
+
+.body .tooltip {
+    font-size: small;
+}
