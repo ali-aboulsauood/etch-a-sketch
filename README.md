@@ -24,6 +24,12 @@ This electronic version of Etch-A-Sketch is designed to have some resemblance to
 
 ### Features
 
+<!--
+**NOTE**: If you want to know how to use Etch-A-Sketch, the game has tooltips that provide quick help, which should be enough to learn how to use the game. The information in this section are mainly for documentation purposes and should only be consulted if you think you need to know more details regarding the game.
+
+**click [here](https://ali-aboulsauood.github.io/etch-a-sketch/) to play Etch-A-Sketch.**
+-->
+
 **NOTE**: _This project is **still in development**. This section will be updated each time a new feature is added/updated/removed_.
 
 Currently, The features of _Etch-A-Sketch_ shall be expected to be limited to the requirements described in the [project assignment](https://www.theodinproject.com/lessons/foundations-etch-a-sketch#assignment), including those described in the ["_Extra Credit_" section](https://www.theodinproject.com/lessons/foundations-etch-a-sketch#extra-credit).

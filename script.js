@@ -124,4 +124,29 @@ document.addEventListener('DOMContentLoaded', () => {
         showGridLines = !showGridLines;
         setGridLineToggleButtonText();
     } toggleGridLineButton.onclick = toggleGridLines;
+
+    // Tooltips
+
+    const controls = document.querySelector('.controls');
+
+    const buttons = Array.from(document.querySelectorAll('button'));
+
+    const tooltip = document.querySelector('.tooltip');
+    const defaultTooltipText = tooltip.textContent;
+
+    const buttonTooltips = 
+    [
+        `Set the grid size to any value between ${MIN_GRID_WIDTH} and ${MAX_GRID_WIDTH}, inclusive.`,
+        `Show/Hide grid lines.`
+    ];
+
+    controls.addEventListener('mouseover', (e) => {
+        const index = buttons.indexOf(e.target);
+
+        tooltip.textContent = (index !== -1) ? buttonTooltips[index] : defaultTooltipText;
+    });
+
+    controls.addEventListener('mouseout', () => {
+        tooltip.textContent = defaultTooltipText;
+    });
 })
