@@ -20,7 +20,7 @@ The Etch-A-Sketch has a thick, flat gray screen enclosed within a red plastic fr
 
 The practice of lineography was born in France in the 17<sup>th</sup> century and became disused by the early 19<sup>th</sup> century, until it was reborn again in the 1960s - with the release of the Etch-A-Sketch, which was used to reproduce some famous works of art, such as the [Mona Lisa](https://en.wikipedia.org/wiki/Mona_Lisa). The Etch-A-Sketch became one of the best known toys of that era.
 
-This electronic version of Etch-A-Sketch is designed to have some resemblance to the original machine, allowing for the creation of lineographic images, by hovering over a square grid of adjustable resolution (total number of squares, or _grid size_).
+This electronic version of Etch-A-Sketch is designed to have some resemblance to the original machine, with the intention of allowing for the creation of lineographic and non-lineographic images, by clicking/hovering over a square grid of adjustable resolution (total number of squares, or _grid size_), though for the time being the [features](#features) are going to be much more limited.
 
 ### Features
 
