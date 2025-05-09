@@ -2,7 +2,7 @@
 
 **NOTE**: _This project is **still in development**. The game is expected to be missing some features or be not in a working state at all._
 
-<!-- **click [here](https://ali-aboulsauood.github.io/etch-a-sketch/) to play Etch-A-Sketch!** -->
+**click [here](https://ali-aboulsauood.github.io/etch-a-sketch/) to play Etch-A-Sketch!**
 
 A pretty neat browser-based drawing toy based on the Etch-A-Sketch ([Wikipedia](https://en.wikipedia.org/wiki/Etch_A_Sketch) · [Official Website](https://www.spinmaster.com/en-US/brands/etch-a-sketch/)), originally created as a practice on Document Object Model (DOM) manipulation through JavaScript.
 
@@ -24,11 +24,9 @@ This electronic version of Etch-A-Sketch is designed to have some resemblance to
 
 ### Features
 
-<!--
 **NOTE**: If you want to know how to use Etch-A-Sketch, the game has tooltips that provide quick help, which should be enough to learn how to use the game. The information in this section are mainly for documentation purposes and should only be consulted if you think you need to know more details regarding the game.
 
 **click [here](https://ali-aboulsauood.github.io/etch-a-sketch/) to play Etch-A-Sketch.**
--->
 
 **NOTE**: _This project is **still in development**. This section will be updated each time a new feature is added/updated/removed_.
 
