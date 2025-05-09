@@ -149,4 +149,16 @@ document.addEventListener('DOMContentLoaded', () => {
     controls.addEventListener('mouseout', () => {
         tooltip.textContent = defaultTooltipText;
     });
+
+    // Grid Coloring
+
+    const DEFAULT_COLOR = getComputedStyle(currentGrid).borderColor;                // `Element.style` gets/sets inline CSS styles only.
+
+    currentGrid.addEventListener('mouseover', (e) => {
+        const target = e.target;
+
+        // The pointer can only enter the grid from outside by moving over its border, causing the target first fired `mouseover` event to be the grid itself.
+        if (target.classList.contains(CSS_CLASS_CELL))
+            target.style.backgroundColor = DEFAULT_COLOR;
+    })
 })

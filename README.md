@@ -54,3 +54,7 @@ The grid is, thus, analogous to an electronic visual display - with the cells be
 ##### Grid Lines
 
 Grid lines can be toggled (shown/hidden) by the user. By default, they are shown so as to help the user get an idea about the current grid size.
+
+#### Coloring
+
+Each cell can be colored by hovering over it with the pointer. The color applied is the same as the accent color of the _Etch-A-Sketch_'s graphical interface, that is, [Tartrazine](https://en.wikipedia.org/wiki/Shades_of_yellow#Tartrazine).
