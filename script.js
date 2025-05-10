@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const buttonTooltips = 
     [
-        `Set the grid size to any value between ${MIN_GRID_WIDTH} and ${MAX_GRID_WIDTH}, inclusive.`,
+        `Set the grid size to any value between ${MIN_GRID_WIDTH} and ${MAX_GRID_WIDTH}, inclusive. You will lose the current drawing, though.`,
         `Show/Hide grid lines.`
     ];
 

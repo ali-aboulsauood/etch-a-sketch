@@ -43,6 +43,8 @@ Etch-A-Sketch uses a square grid consisting of square _cells_, each of which can
 The default grid size (total number of cells) is `16 × 16` (256 cells), but the user may set the grid size any integer value from `1 × 1` (single cell) to `100 × 100` (10000 cells).
 Larger grid sizes are not allowed, in order to prevent potential delays, freezing, or crashing due to increased computer resource usage.
 
+**NOTE**: Setting the grid size causes the drawing within it, if present, to be discarded.
+
 <!-- 
 The larger the grid size, the more complex and detailed the produced image can be.
 
