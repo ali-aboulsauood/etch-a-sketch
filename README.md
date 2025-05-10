@@ -1,6 +1,6 @@
 # Etch-A-Sketch
 
-**NOTE**: _This project is **still in development**. The game is expected to be missing some features or be not in a working state at all._
+<!-- **NOTE**: _This project is **still in development**. The game is expected to be missing some features or be not in a working state at all._ -->
 
 **click [here](https://ali-aboulsauood.github.io/etch-a-sketch/) to play Etch-A-Sketch!**
 
@@ -28,7 +28,7 @@ This electronic version of Etch-A-Sketch is designed to have some resemblance to
 
 **click [here](https://ali-aboulsauood.github.io/etch-a-sketch/) to play Etch-A-Sketch.**
 
-**NOTE**: _This project is **still in development**. This section will be updated each time a new feature is added/updated/removed_.
+<!-- **NOTE**: _This project is **still in development**. This section will be updated each time a new feature is added/updated/removed_. -->
 
 Currently, The features of _Etch-A-Sketch_ shall be expected to be limited to the requirements described in the [project assignment](https://www.theodinproject.com/lessons/foundations-etch-a-sketch#assignment), including those described in the ["_Extra Credit_" section](https://www.theodinproject.com/lessons/foundations-etch-a-sketch#extra-credit).
 
