@@ -55,6 +55,18 @@ document.addEventListener('DOMContentLoaded', () => {
         cells = document.querySelectorAll(`.${CSS_CLASS_CELL}`);
         cells.forEach(cell => cell.alpha = 1.0);
 
+        // Grid Coloring
+
+        const DEFAULT_COLOR = getComputedStyle(currentGrid).borderColor;                // `Element.style` gets/sets inline CSS styles only.
+
+        currentGrid.addEventListener('mouseover', (e) => {
+        const target = e.target;
+
+        // The pointer can only enter the grid from outside by moving over its border, causing the target first fired `mouseover` event to be the grid itself.
+        if (target.classList.contains(CSS_CLASS_CELL))
+            target.style.backgroundColor = DEFAULT_COLOR;
+        })
+
     } createGrid();
 
     const setGridSizeButton = document.querySelector(".set-grid-size");
@@ -149,16 +161,4 @@ document.addEventListener('DOMContentLoaded', () => {
     controls.addEventListener('mouseout', () => {
         tooltip.textContent = defaultTooltipText;
     });
-
-    // Grid Coloring
-
-    const DEFAULT_COLOR = getComputedStyle(currentGrid).borderColor;                // `Element.style` gets/sets inline CSS styles only.
-
-    currentGrid.addEventListener('mouseover', (e) => {
-        const target = e.target;
-
-        // The pointer can only enter the grid from outside by moving over its border, causing the target first fired `mouseover` event to be the grid itself.
-        if (target.classList.contains(CSS_CLASS_CELL))
-            target.style.backgroundColor = DEFAULT_COLOR;
-    })
 })
