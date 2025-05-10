@@ -57,4 +57,7 @@ Grid lines can be toggled (shown/hidden) by the user. By default, they are shown
 
 #### Coloring
 
-Each cell can be colored by hovering over it with the pointer. The color applied is the same as the accent color of the _Etch-A-Sketch_'s graphical interface, that is, [Tartrazine](https://en.wikipedia.org/wiki/Shades_of_yellow#Tartrazine).
+Each cell can be colored by hovering over it with the pointer. The color applied is a pseudo-random RGB color.
+<!-- 
+The color applied is the same as the accent color of the _Etch-A-Sketch_'s graphical interface, that is, [Tartrazine](https://en.wikipedia.org/wiki/Shades_of_yellow#Tartrazine).
+-->

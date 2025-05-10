@@ -1,8 +1,6 @@
 "use strict";
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Grid and Grid Size/Lines
-
     const DEFAULT_GRID_WIDTH = 16, MIN_GRID_WIDTH = 1, MAX_GRID_WIDTH = 100;
 
     const CSS_SELECTOR_GRID = ".grid";
@@ -19,6 +17,31 @@ document.addEventListener('DOMContentLoaded', () => {
     let showGridLines = true;
 
     let currentGrid = null;
+
+    function randomIntBet(min, max) {
+        const isMinInvalid = (typeof min !== "number" || Number.isNaN(min));
+        const isMaxInvalid = (typeof max !== "number" || Number.isNaN(max));
+
+        if (isMinInvalid || isMaxInvalid)
+            return;
+
+        if (min > max)
+            [min, max] = [max, min];
+
+        const minCeiled = Math.ceil(min);
+        const maxFloored = Math.floor(max);
+        
+        return Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled);
+    }
+    function randomRGBColor()
+    {
+        const min = 0, max = 256;
+
+        let r = null, g = null, b = null;
+        [r, g, b] = [randomIntBet(min, max), randomIntBet(min, max), randomIntBet(min, max)];
+
+        return `rgb(${r}, ${g}, ${b})`;
+    }
 
     function createGrid(width = DEFAULT_GRID_WIDTH) {
         const grid = document.querySelector(CSS_SELECTOR_GRID);
@@ -55,16 +78,14 @@ document.addEventListener('DOMContentLoaded', () => {
         cells = document.querySelectorAll(`.${CSS_CLASS_CELL}`);
         cells.forEach(cell => cell.alpha = 1.0);
 
-        // Grid Coloring
-
-        const DEFAULT_COLOR = getComputedStyle(currentGrid).borderColor;                // `Element.style` gets/sets inline CSS styles only.
+        // const DEFAULT_COLOR = getComputedStyle(currentGrid).borderColor;                // `Element.style` gets/sets inline CSS styles only.
 
         currentGrid.addEventListener('mouseover', (e) => {
         const target = e.target;
 
         // The pointer can only enter the grid from outside by moving over its border, causing the target first fired `mouseover` event to be the grid itself.
         if (target.classList.contains(CSS_CLASS_CELL))
-            target.style.backgroundColor = DEFAULT_COLOR;
+            target.style.backgroundColor = randomRGBColor();
         })
 
     } createGrid();
@@ -137,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
         setGridLineToggleButtonText();
     } toggleGridLineButton.onclick = toggleGridLines;
 
-    // Tooltips
+    // Tooltips 
 
     const controls = document.querySelector('.controls');
 
